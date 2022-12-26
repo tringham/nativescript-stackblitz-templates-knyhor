@@ -1,4 +1,28 @@
-import { Observable } from '@nativescript/core';
+import { Observable,
+  Application, 
+  Trace,
+  ObservableArray, 
+  GridLayout, 
+  KeyedTemplate, 
+  View,
+  Dialogs,
+  Utils
+} from '@nativescript/core';
+
+import * as camera from "@nativescript/camera";
+
+
+
+camera.requestPermissions().then(
+  function success() {
+  // permission request accepted or already granted 
+  // ... call camera.takePicture here ...
+  }, 
+  function failure() {
+  // permission request rejected
+  // ... tell the user ...
+  }
+);
 
 export class HelloWorldModel extends Observable {
   private _counter: number;
