@@ -6,6 +6,7 @@
   "dependencies": {
     "@nativescript/camera": "^5.0.15",
     "@nativescript/core": "~8.3.0",
+    "@nativescript/mlkit-text-recognition": "^1.0.6",
     "@nativescript/theme": "~3.0.2",
     "nativescript-camera": "^4.5.0"
   },

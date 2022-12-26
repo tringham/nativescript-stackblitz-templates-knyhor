@@ -10,7 +10,7 @@ import { Observable,
 } from '@nativescript/core';
 
 import * as camera from "@nativescript/camera";
-
+import {} from "@nativescript/mlkit-text-recognition"
 
 
 camera.requestPermissions().then(
