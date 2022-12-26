@@ -47,8 +47,10 @@ export class HelloWorldModel extends Observable {
     }
   }
 
-  onTap() {
+  async onTap() {
     this._counter--;
+    let resp = await camera.takePicture()
+    console.log(resp)
     this.updateMessage();
   }
 
